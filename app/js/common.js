@@ -99,15 +99,22 @@ $(document).ready(function () {
             $(this).find(".form-arrow").toggleClass('active');
         });
     }
-
     $("#your-files").on("change", function (evt) {
-        let files = evt.target.files;
+        let files = evt.target.files; // FileList object
         for (let i = 0, f; f = files[i]; i++) {
             // Only process image files.
             if (!f.type.match('image.*')) {
                 alert("Только изображения....");
             }
-            $(".load .form-input").val(this.files[0]);
+            let reader = new FileReader();
+            // Closure to capture the file information.
+            reader.onload = (function(theFile) {
+                return function(e) {
+                    $(".load .form-input").val(theFile.name);
+                };
+            })(f);
+            // Read in the image file as a data URL.
+            reader.readAsDataURL(f);
         }
         return false;
     });
