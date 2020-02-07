@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=480, initial-scale=0, maximum-scale=1">
+<!--	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	@import "header.html"
+	<div class="wrap">
+		<div class="container wrap-container">
+			<ul class="breadcrumb">
+				<li class="breadcrumb-list">
+					<a href="#" class="breadcrumb-link">Главная</a>
+				</li>
+				<li class="breadcrumb-list">
+					<a href="#" class="breadcrumb-link">Заказы </a>
+				</li>
+				<li class="breadcrumb-list">
+					<a href="#" class="breadcrumb-link">Общедоступные заказы</a>
+				</li>
+				<li class="breadcrumb-list">
+					<p class="breadcrumb-link">Предложенные запчасти</p>
+				</li>
+			</ul>
+			<section class="proposed">
+				<h2 class="title">Предложенные запчасти</h2>
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="form form-customer">
+							<div class="form-header">
+								<div class="form-row">
+									<img src="img/user.svg" alt="user" class="form-icon-user">
+									<p class="form-title">Данные клиента и поставщика</p>
+								</div>
+								<button type="button" class="btn-edit">
+									<img src="img/edit.svg" alt="edit" class="btn-icon-edit">
+								</button>
+								<img src="img/arrow-white.svg" alt="arrow" class="form-arrow">
+							</div>
+							<div class="form-drop">
+								<table class="form-table">
+									<tr>
+										<td>город</td>
+										<td>Киев</td>
+									</tr>
+									<tr>
+										<td>Данные поставщика</td>
+										<td>Sed ut perspiciatis unde</td>
+									</tr>
+									<tr>
+										<td>Государственный номер</td>
+										<td>AA6126ME</td>
+									</tr>
+									<tr>
+										<td>Имя клиента</td>
+										<td>Cергей</td>
+									</tr>
+									<tr>
+										<td>Номер телефона</td>
+										<td>095 123 45 67</td>
+									</tr>
+									<tr>
+										<td>Статус</td>
+										<td><span class="circle circle-green">Общедоступный</span></td>
+									</tr>
+									<tr class="form-pb">
+										<td>Комментарий</td>
+										<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+											do eiusmod tempor incididunt </td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="form form-car">
+							<div class="tech">
+								<div class="tech-row">
+									<img src="img/photo-camera.svg" alt="photo camera" class="tech-img">
+									<p class="tech-text">Тех. паспорт</p>
+								</div>
+								<div class="tech-row">
+									<p class="tech-text">Открыть фото</p>
+									<img src="img/arrow.svg" alt="arrow" class="tech-arrow">
+								</div>
+							</div>
+							<div class="form-header">
+								<div class="form-row">
+									<img src="img/car.svg" alt="car" class="form-icon-car">
+									<p class="form-title">Данные автомобиля</p>
+								</div>
+								<img src="img/arrow-white.svg" alt="arrow" class="form-arrow">
+							</div>
+							<div class="form-drop">
+								<table class="form-table">
+									<tr>
+										<td>Марка </td>
+										<td>Lexus</td>
+									</tr>
+									<tr>
+										<td>Модель</td>
+										<td>lx570</td>
+									</tr>
+									<tr>
+										<td>Год</td>
+										<td>2012</td>
+									</tr>
+									<tr>
+										<td>Кузов</td>
+										<td>Perspiciatis unde</td>
+									</tr>
+									<tr>
+										<td>Коробка передач</td>
+										<td>Labore et dolore</td>
+									</tr>
+									<tr>
+										<td>Двигатель</td>
+										<td>Ut enim ad minim</td>
+									</tr>
+									<tr>
+										<td>Объем двигателя</td>
+										<td>2,5</td>
+									</tr>
+									<tr>
+										<td>VIN </td>
+										<td>JTJHY7AX5D4093979</td>
+									</tr>
+								</table>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="spares">
+				<div class="row align-items-center flex-column-reverse flex-lg-row">
+					<div class="col-lg-6 col-12">
+						<h2 class="title">Запчасти</h2>
+					</div>
+					<div class="col-lg-6 col-12 d-flex align-items-center align-items-lg-end flex-column">
+						<a href="#" class="btn-gray btn-gray-tech">
+							<img src="img/photo-camera.svg" alt="photo-camera" class="btn-gray-camera">
+							<p class="btn-gray-text">Посмотреть тех. паспорт</p>
+							<img src="img/arrow.svg" alt="arrow" class="btn-gray-arrow">
+						</a>
+						<a href="#" type="button" class="btn-gray btn-choose-parts">
+							<img src="img/detail.svg" alt="detail" class="btn-gray-detail">
+							<p class="btn-gray-text">Запчасти с таким же VIN</p>
+							<img src="img/arrow.svg" alt="arrow" class="btn-gray-arrow">
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="form form-spares">
+							<div class="form-header">
+								<div class="form-row">
+									<p class="form-title hide">Предложено</p>
+									<p class="form-title">Деталь</p>
+									<div class="form-title"><p>Цены</p>
+										<div class="information hide">
+											<img src="img/information.svg" alt="" class="tooltip-img">
+											<div class="tooltip-container">
+												<div class="tooltip-white">
+													<p class="tooltip-text">1 — цена закупки</p>
+													<p class="tooltip-text">2 — цена продажи</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p class="form-title">Кол-во</p>
+									<p class="form-title hide">Срок</p>
+									<p class="form-title hide">Статус</p>
+									<p class="form-title hide">Поставщик</p>
+									<p class="form-title">Действия</p>
+								</div>
+							</div>
+							<table class="form-table">
+								<tr>
+									<td class="hide"></td>
+									<td><span class="circle circle-blue circle-mob">фильтр масляный</span></td>
+									<td></td>
+									<td></td>
+									<td class="hide">3</td>
+									<td class="hide"><span class="circle circle-blue">Сообщен</span></td>
+									<td class="hide"></td>
+									<td>
+										<div class="form-actions">
+											<div class="form-actions-item">
+												<div class="form-actions-circle"></div>
+												<div class="form-actions-circle"></div>
+												<div class="form-actions-circle"></div>
+												<div class="form-action">
+													<ul class="form-action-conteiner">
+														<il class="form-action-list next-add-offer">
+															<img src="img/add.svg" alt="add" class="form-action-icon">
+															<p class="form-action-text">Добавить свое предложение</p>
+														</il>
+														<il class="form-action-list next-change-part">
+															<img src="img/edit.svg" alt="edit" class="form-action-icon">
+															<p class="form-action-text">Измененить запчасть</p>
+														</il>
+														<il class="form-action-list">
+															<img src="img/search.svg" alt="search" class="form-action-icon">
+															<p class="form-action-text">Предложить запчасть с сайта</p>
+														</il>
+														<il class="form-action-list">
+															<img src="img/detail.svg" alt="detail" class="form-action-icon">
+															<p class="form-action-text">Посмотреть аналоги</p>
+														</il>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="hide"><p class="form-nickname">Николай</p></td>
+									<td><span class="circle circle-green circle-mob">
+										0415238020<br>
+										TOYOTA<br>
+										фильтр масляный<br>
+										Оригинал
+										</span>
+									</td>
+									<td>
+										<ul class="form-ul">
+											<li class="form-li">
+												<p class="form-text">1. <span class="form-span">163 ₴</span></p>
+											</li>
+											<li class="form-li">
+												<p class="form-text">2. <span class="form-span">250 ₴</span></p>
+											</li>
+										</ul>
+									</td>
+									<td>1</td>
+									<td class="hide">2</td>
+									<td class="hide"><span class="circle circle-green">Заказан</span></td>
+									<td class="hide">MaxParts</td>
+									<td>
+										<div class="form-actions">
+											<a href="#" class="form-actions-files">
+												<svg class="form-actions-svg" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0 5.85101V14.6755C0 16.0224 1.09388 17.1163 2.44082 17.1163H17.5592C18.9061 17.1163 20 16.0224 20 14.6755V5.85101C20 4.56938 18.9592 3.52856 17.6776 3.52856H14.4286L14.351 3.18979C14.0367 1.83061 12.8408 0.883667 11.4449 0.883667H8.55102C7.15918 0.883667 5.96327 1.83061 5.6449 3.18979L5.56735 3.52856H2.32245C1.04082 3.52856 0 4.57346 0 5.85101ZM5.96735 4.52856C6.2 4.52856 6.4 4.36938 6.45306 4.14081L6.62041 3.41428C6.83265 2.51224 7.62449 1.88367 8.55102 1.88367H11.4449C12.3714 1.88367 13.1633 2.51224 13.3755 3.41428L13.5429 4.14081C13.5959 4.3653 13.7959 4.52856 14.0286 4.52856H17.6735C18.4041 4.52856 18.9959 5.1204 18.9959 5.85101V14.6755C18.9959 15.4714 18.351 16.1163 17.5551 16.1163H2.44082C1.6449 16.1163 1 15.4714 1 14.6755V5.85101C1 5.1204 1.59184 4.52856 2.32245 4.52856H5.96735Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.5"/>
+													<path d="M3.38374 7.33261C3.75344 7.33261 4.05313 7.03292 4.05313 6.66322C4.05313 6.29353 3.75344 5.99384 3.38374 5.99384C3.01405 5.99384 2.71436 6.29353 2.71436 6.66322C2.71436 7.03292 3.01405 7.33261 3.38374 7.33261Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.5"/>
+													<path d="M9.9998 14.549C12.3141 14.549 14.1998 12.6633 14.1998 10.349C14.1998 8.0347 12.3141 6.14899 9.9998 6.14899C7.68552 6.14899 5.7998 8.03062 5.7998 10.349C5.7998 12.6674 7.68552 14.549 9.9998 14.549ZM9.9998 7.14899C11.7631 7.14899 13.1998 8.58572 13.1998 10.349C13.1998 12.1123 11.7631 13.549 9.9998 13.549C8.23654 13.549 6.7998 12.1123 6.7998 10.349C6.7998 8.58572 8.23654 7.14899 9.9998 7.14899Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.5"/>
+												</svg>
+											</a>
+											<a href="#" class="form-actions-files">
+												<svg class="form-actions-svg" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M22.7717 2.2915C22.63 2.20756 22.4549 2.20429 22.3103 2.28312L17.2626 5.03931V3.38556C17.2611 2.09905 16.2186 1.05651 14.9321 1.05505H3.33051C2.044 1.05651 1.00146 2.09905 1 3.38556V12.5874C1.00146 13.8739 2.044 14.9165 3.33051 14.9179H14.9321C16.2186 14.9165 17.2611 13.8739 17.2626 12.5874V10.9637L22.3105 13.7199C22.4549 13.7987 22.6302 13.7957 22.7717 13.7117C22.9133 13.6276 23 13.4752 23 13.3108V2.69224C23 2.52764 22.9132 2.37543 22.7717 2.2915ZM16.33 12.5876C16.3293 13.3596 15.7037 13.985 14.9317 13.9859H3.33051C2.55853 13.985 1.93311 13.3596 1.9322 12.5876V3.38556C1.93311 2.61376 2.55853 1.98817 3.33051 1.98726H14.9321C15.7039 1.98817 16.3295 2.61376 16.3304 3.38556L16.33 12.5876ZM22.0678 12.5253L17.2626 9.9017V6.10133L22.0678 3.47787V12.5253Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.5"/>
+												</svg>
+											</a>
+											<a href="#" class="form-actions-files">
+												<svg class="form-actions-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16.7875 1.34766H3.19302C1.77166 1.34766 0.615234 2.50385 0.615234 3.92544V12.2449C0.615234 13.6633 1.76662 14.8177 3.18386 14.8227V18.598L8.60939 14.8227H16.7875C18.2088 14.8227 19.3652 13.6663 19.3652 12.2449V3.92544C19.3652 2.50385 18.2088 1.34766 16.7875 1.34766ZM18.2666 12.2449C18.2666 13.0605 17.6031 13.7241 16.7875 13.7241H8.26469L4.28249 16.4952V13.7241H3.19302C2.3774 13.7241 1.71387 13.0605 1.71387 12.2449V3.92544C1.71387 3.1097 2.3774 2.44629 3.19302 2.44629H16.7875C17.6031 2.44629 18.2666 3.1097 18.2666 3.92544V12.2449Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.4"/>
+													<path d="M5.63379 5.22961H14.3471V6.32824H5.63379V5.22961Z" fill="#79ACD7"/>
+													<path d="M5.63379 7.57336H14.3471V8.67199H5.63379V7.57336Z" fill="#79ACD7"/>
+													<path d="M5.63379 9.91711H14.3471V11.0157H5.63379V9.91711Z" fill="#79ACD7"/>
+												</svg>
+											</a>
+											<div class="form-actions-item">
+												<div class="form-actions-circle"></div>
+												<div class="form-actions-circle"></div>
+												<div class="form-actions-circle"></div>
+												<div class="form-action">
+													<ul class="form-action-conteiner">
+														<il class="form-action-list next-add-offer">
+															<img src="img/add.svg" alt="add" class="form-action-icon">
+															<p class="form-action-text">Добавить свое предложение</p>
+														</il>
+														<il class="form-action-list next-change-part">
+															<img src="img/edit.svg" alt="edit" class="form-action-icon">
+															<p class="form-action-text">Измененить запчасть</p>
+														</il>
+														<il class="form-action-list">
+															<img src="img/search.svg" alt="search" class="form-action-icon">
+															<p class="form-action-text">Предложить запчасть с сайта</p>
+														</il>
+														<il class="form-action-list">
+															<img src="img/detail.svg" alt="detail" class="form-action-icon">
+															<p class="form-action-text">Посмотреть аналоги</p>
+														</il>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="hide"></td>
+									<td><span class="circle circle-blue circle-mob">фильтр масляный</span></td>
+									<td></td>
+									<td></td>
+									<td class="hide">3</td>
+									<td class="hide"><span class="circle circle-blue">Сообщен</span></td>
+									<td class="hide"></td>
+									<td>
+										<div class="form-actions">
+											<div class="form-actions-item">
+												<div class="form-actions-circle"></div>
+												<div class="form-actions-circle"></div>
+												<div class="form-actions-circle"></div>
+												<div class="form-action">
+													<ul class="form-action-conteiner">
+														<il class="form-action-list next-add-offer">
+															<img src="img/add.svg" alt="add" class="form-action-icon">
+															<p class="form-action-text">Добавить свое предложение</p>
+														</il>
+														<il class="form-action-list next-change-part">
+															<img src="img/edit.svg" alt="edit" class="form-action-icon">
+															<p class="form-action-text">Измененить запчасть</p>
+														</il>
+														<il class="form-action-list">
+															<img src="img/search.svg" alt="search" class="form-action-icon">
+															<p class="form-action-text">Предложить запчасть с сайта</p>
+														</il>
+														<il class="form-action-list">
+															<img src="img/detail.svg" alt="detail" class="form-action-icon">
+															<p class="form-action-text">Посмотреть аналоги</p>
+														</il>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="hide"><p class="form-nickname">Николай</p></td>
+									<td><span class="circle circle-green circle-mob">
+										<img src="img/lock.svg" alt="lock" class="form-lock">
+										TOYOTA<br>
+										фильтр масляный<br>
+										Оригинал
+										</span>
+									</td>
+									<td>
+										<ul class="form-ul">
+											<li class="form-li">
+												<p class="form-text">1. <img src="img/lock.svg" alt="lock" class="form-lock"></p>
+											</li>
+											<li class="form-li">
+												<p class="form-text">2. <span class="form-span">250 ₴</span></p>
+											</li>
+										</ul>
+									</td>
+									<td>1</td>
+									<td class="hide">2</td>
+									<td class="hide"><span class="circle circle-green">Заказан</span></td>
+									<td class="hide">MaxParts</td>
+									<td>
+										<div class="form-actions">
+											<a href="#" class="form-actions-files">
+												<svg class="form-actions-svg" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0 5.85101V14.6755C0 16.0224 1.09388 17.1163 2.44082 17.1163H17.5592C18.9061 17.1163 20 16.0224 20 14.6755V5.85101C20 4.56938 18.9592 3.52856 17.6776 3.52856H14.4286L14.351 3.18979C14.0367 1.83061 12.8408 0.883667 11.4449 0.883667H8.55102C7.15918 0.883667 5.96327 1.83061 5.6449 3.18979L5.56735 3.52856H2.32245C1.04082 3.52856 0 4.57346 0 5.85101ZM5.96735 4.52856C6.2 4.52856 6.4 4.36938 6.45306 4.14081L6.62041 3.41428C6.83265 2.51224 7.62449 1.88367 8.55102 1.88367H11.4449C12.3714 1.88367 13.1633 2.51224 13.3755 3.41428L13.5429 4.14081C13.5959 4.3653 13.7959 4.52856 14.0286 4.52856H17.6735C18.4041 4.52856 18.9959 5.1204 18.9959 5.85101V14.6755C18.9959 15.4714 18.351 16.1163 17.5551 16.1163H2.44082C1.6449 16.1163 1 15.4714 1 14.6755V5.85101C1 5.1204 1.59184 4.52856 2.32245 4.52856H5.96735Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.5"/>
+													<path d="M3.38374 7.33261C3.75344 7.33261 4.05313 7.03292 4.05313 6.66322C4.05313 6.29353 3.75344 5.99384 3.38374 5.99384C3.01405 5.99384 2.71436 6.29353 2.71436 6.66322C2.71436 7.03292 3.01405 7.33261 3.38374 7.33261Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.5"/>
+													<path d="M9.9998 14.549C12.3141 14.549 14.1998 12.6633 14.1998 10.349C14.1998 8.0347 12.3141 6.14899 9.9998 6.14899C7.68552 6.14899 5.7998 8.03062 5.7998 10.349C5.7998 12.6674 7.68552 14.549 9.9998 14.549ZM9.9998 7.14899C11.7631 7.14899 13.1998 8.58572 13.1998 10.349C13.1998 12.1123 11.7631 13.549 9.9998 13.549C8.23654 13.549 6.7998 12.1123 6.7998 10.349C6.7998 8.58572 8.23654 7.14899 9.9998 7.14899Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.5"/>
+												</svg>
+											</a>
+											<a href="#" class="form-actions-files">
+												<svg class="form-actions-svg" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M22.7717 2.2915C22.63 2.20756 22.4549 2.20429 22.3103 2.28312L17.2626 5.03931V3.38556C17.2611 2.09905 16.2186 1.05651 14.9321 1.05505H3.33051C2.044 1.05651 1.00146 2.09905 1 3.38556V12.5874C1.00146 13.8739 2.044 14.9165 3.33051 14.9179H14.9321C16.2186 14.9165 17.2611 13.8739 17.2626 12.5874V10.9637L22.3105 13.7199C22.4549 13.7987 22.6302 13.7957 22.7717 13.7117C22.9133 13.6276 23 13.4752 23 13.3108V2.69224C23 2.52764 22.9132 2.37543 22.7717 2.2915ZM16.33 12.5876C16.3293 13.3596 15.7037 13.985 14.9317 13.9859H3.33051C2.55853 13.985 1.93311 13.3596 1.9322 12.5876V3.38556C1.93311 2.61376 2.55853 1.98817 3.33051 1.98726H14.9321C15.7039 1.98817 16.3295 2.61376 16.3304 3.38556L16.33 12.5876ZM22.0678 12.5253L17.2626 9.9017V6.10133L22.0678 3.47787V12.5253Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.5"/>
+												</svg>
+											</a>
+											<a href="#" class="form-actions-files">
+												<svg class="form-actions-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16.7875 1.34766H3.19302C1.77166 1.34766 0.615234 2.50385 0.615234 3.92544V12.2449C0.615234 13.6633 1.76662 14.8177 3.18386 14.8227V18.598L8.60939 14.8227H16.7875C18.2088 14.8227 19.3652 13.6663 19.3652 12.2449V3.92544C19.3652 2.50385 18.2088 1.34766 16.7875 1.34766ZM18.2666 12.2449C18.2666 13.0605 17.6031 13.7241 16.7875 13.7241H8.26469L4.28249 16.4952V13.7241H3.19302C2.3774 13.7241 1.71387 13.0605 1.71387 12.2449V3.92544C1.71387 3.1097 2.3774 2.44629 3.19302 2.44629H16.7875C17.6031 2.44629 18.2666 3.1097 18.2666 3.92544V12.2449Z" fill="#79ACD7" stroke="#79ACD7" stroke-width="0.4"/>
+													<path d="M5.63379 5.22961H14.3471V6.32824H5.63379V5.22961Z" fill="#79ACD7"/>
+													<path d="M5.63379 7.57336H14.3471V8.67199H5.63379V7.57336Z" fill="#79ACD7"/>
+													<path d="M5.63379 9.91711H14.3471V11.0157H5.63379V9.91711Z" fill="#79ACD7"/>
+												</svg>
+											</a>
+											<div class="form-actions-item">
+												<div class="form-actions-circle"></div>
+												<div class="form-actions-circle"></div>
+												<div class="form-actions-circle"></div>
+												<div class="form-action">
+													<ul class="form-action-conteiner">
+														<il class="form-action-list next-add-offer">
+															<img src="img/add.svg" alt="add" class="form-action-icon">
+															<p class="form-action-text">Добавить свое предложение</p>
+														</il>
+														<il class="form-action-list next-change-part">
+															<img src="img/edit.svg" alt="edit" class="form-action-icon">
+															<p class="form-action-text">Измененить запчасть</p>
+														</il>
+														<il class="form-action-list">
+															<img src="img/search.svg" alt="search" class="form-action-icon">
+															<p class="form-action-text">Предложить запчасть с сайта</p>
+														</il>
+														<il class="form-action-list">
+															<img src="img/detail.svg" alt="detail" class="form-action-icon">
+															<p class="form-action-text">Посмотреть аналоги</p>
+														</il>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="row justify-content-center">
+							<a href="#" class="btn btn-add"><img src="img/add.svg" alt="" class="btn-add_img">Добавить запчасть</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	@import "footer.html"
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/bodyScrollLock.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

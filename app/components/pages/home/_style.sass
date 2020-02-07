@@ -1,0 +1,325 @@
+.proposed
+  padding-top: 52px
+  .title
+    margin-bottom: 66px
+  .form-table
+    td
+      width: 45%
+      font-weight: normal
+      &:last-child
+        font-weight: 300
+        width: 55%
+
+.form
+  background: #FFFFFF
+  box-shadow: 0px 10px 25px rgba(191, 191, 191, 0.25)
+  border-radius: 15px
+  &-flex
+    display: flex
+    flex-wrap: wrap
+    .form-field
+      width: calc(50% - 20px)
+      margin-right: 40px
+      &:nth-child(2n+2)
+        margin-right: 0
+  &-arrow
+    display: none
+    transform: scale(1,-1)
+    transition: all 0.3s ease
+    width: 26px
+    height: 26px
+    object-fit: contain
+    &.active
+      transform: scale(1,1)
+  &-car
+    position: relative
+    .form-table td:last-child
+      padding: 20px 15px 20px 11px
+  &-header
+    background: linear-gradient(180deg, #93C3EC 0%, #8AADCB 100%), linear-gradient(180deg, #82B9E8 0%, #74A5CE 100%)
+    box-shadow: 0px 4px 20px rgba(178, 205, 227, 0.6)
+    border-radius: 15px 15px 0px 0px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    min-height: 81px
+    padding: 10px 25px 10px 27px
+  &-title
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 24px
+    color: #FFFFFF
+    display: flex
+    align-items: center
+  &-icon
+    &-user
+      width: 17px
+      height: 21px
+      object-fit: contain
+      margin-right: 12px
+    &-edit
+      width: 17px
+      height: 18px
+      object-fit: contain
+      margin-left: 10px
+    &-car
+      width: 34px
+      height: 16px
+      object-fit: contain
+      margin-right: 20px
+  &-row
+    display: flex
+    align-items: center
+    width: 100%
+    margin: 0
+    flex-wrap: nowrap
+    &-date
+      display: flex
+      justify-content: space-between
+      .form-field
+        margin-right: 10px
+        &:last-child
+          margin-right: 0
+        &:first-child, &:last-child
+          max-width: 223px
+          width: 100%
+        &:nth-child(2)
+          max-width: 160px
+          width: 100%
+  &-table
+    width: 100%
+    td
+      min-height: 69px
+      padding: 20px 20px 20px 27px
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-size: 16px
+      line-height: 28px
+      color: #525252
+      &:first-letter
+        text-transform: uppercase
+  &-pb
+    td
+      padding-bottom: 33px
+  &-customer
+    max-width: 517px
+    width: 100%
+  &-spares
+    margin-top: 33px
+    .form-title, td
+      &:first-child
+        //min-width: 14vw
+        width: 160px
+        padding: 20px 0 20px 36px
+      &:nth-child(2)
+        //min-width: 21.8vw
+        width: 250px
+        padding: 20px 0 20px 30px
+      &:nth-child(3), &:nth-child(4), &:nth-child(5)
+        //min-width: 7.9vw
+        justify-content: center
+        width: 91px
+        padding: 20px 13px
+      &:nth-child(4)
+        padding: 20px 18px
+        text-align: center
+      &:nth-child(5)
+        text-align: center
+        padding: 20px 23px
+      &:nth-child(6)
+        //min-width: 11.8vw
+        width: 135px
+        justify-content: center
+      &:nth-child(7),  &:nth-child(8)
+        //min-width: 14vw
+        width: 161px
+        padding: 20px 30px
+      &:nth-child(8)
+        padding: 6px 0 10px 22px
+    .form-header
+      padding: 10px 0
+    .form-table td
+      vertical-align: top
+  &-actions
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    &-files
+      display: flex
+    &-svg
+      margin-right: 15px
+      cursor: pointer
+      path
+        transition: all 0.3s ease
+      &:hover
+        path
+          fill: #48769C
+    &-item
+      padding: 5px 20px 5px 5px
+      cursor: pointer
+      position: relative
+      &.active
+        .form-actions-circle
+          background: #79ACD7
+        .form-action
+          opacity: 1
+          pointer-events: auto
+    &-circle
+      transition: all 0.3s ease
+      border-radius: 50%
+      background: #C4C4C4
+      width: 5px
+      height: 5px
+      margin: 7px 0
+  &-lock
+    width: 23px
+    height: 23px
+    object-fit: contain
+    margin: 0 0 10px
+  &-action
+    z-index: 1
+    padding-top: 25px
+    position: absolute
+    right: 20px
+    top: 75%
+    width: max-content
+    opacity: 0
+    pointer-events: none
+    transition: all 0.3s ease
+    min-width: 323px
+    &-conteiner
+      padding: 30px 30px 9px 30px
+      background: linear-gradient(180deg, #93C3EC 0%, #8AADCB 100%)
+      box-shadow: 0px 0px 25px rgba(191, 191, 191, 0.25)
+      position: relative
+      border-radius: 10px 0 10px 10px
+      &:before
+        content: ''
+        position: absolute
+        top: -19px
+        right: 0
+        background: url("../img/rectangle.png") no-repeat center / contain
+        height: 30px
+        width: 25px
+        z-index: -1
+    &-list
+      display: flex
+      align-items: center
+      margin-bottom: 21px
+      &:hover
+        .form-action-text
+          font-weight: bold
+    &-icon
+      width: 16px
+      height: auto
+      margin-right: 17px
+    &-text
+      font-family: "Roboto", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 24px
+      color: #FFFFFF
+      transition: all 0.3s ease
+  &-text
+    font-family: "Roboto", sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 28px
+    color: #B6B6B6
+    white-space: nowrap
+    align-items: flex-start
+    display: flex
+    flex-wrap: nowrap
+  &-span
+    color: #525252
+    margin-left: 6px
+  &-nickname
+    position: relative
+    width: fit-content
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -2px
+      height: 1px
+      width: 100%
+      background: #D1E1EE
+  &-li
+    .form-lock
+      margin: 0 0 0 6px
+
+td
+  border-right: 1px solid #F0F0F0
+  border-bottom: 1px solid #F0F0F0
+  width: auto
+  font-weight: 300
+  &:last-child
+    border-right: none
+tr
+  &:last-child
+    td
+      border-bottom: none
+.spares
+  padding-top: 56px
+  padding-bottom: 30px
+.tech
+  display: flex
+  position: absolute
+  left: 160px
+  top: -50px
+  height: 50px
+  width: 148px
+  cursor: pointer
+  &:hover
+    .tech-row
+      padding: 0 22px
+      &:last-child
+        left: calc(100% + 21px)
+        .tech-text
+          opacity: 1
+  &-row
+    position: absolute
+    left: 0
+    width: auto
+    bottom: 0
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0 0 0 22px
+    height: 100%
+    transition: all 0.3s ease
+    border-radius: 15px 0 0 0
+    background: #7D7D7D
+    z-index: 2
+    &:last-child
+      border-radius: 0 15px 0 0
+      z-index: 1
+      left: 14px
+      padding: 0 22px
+      border-left: 1px solid #8F8F8F
+      .tech-text
+        opacity: 0
+
+  &-img
+    width: 20px
+    height: 20px
+    object-fit: contain
+    margin-right: 11px
+  &-text
+    font-family: "Roboto", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 24px
+    color: #FFFFFF
+    white-space: nowrap
+  &-arrow
+    width: 14px
+    height: 14px
+    object-fit: contain
+    margin-left: 11px

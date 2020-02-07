@@ -1,0 +1,174 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1199px)
+  .hide
+    display: none
+  .form-spares
+    .form-title
+      white-space: nowrap
+    .form-title, td
+      padding: 20px 19px!important
+      &:nth-child(2)
+        width: 30%
+      &:nth-child(3)
+        width: 22%
+      &:nth-child(4)
+        width: 13%
+      &:last-child
+        width: 35%
+        padding: 16px 0 16px 15px
+        justify-content: center
+  .form-actions-item
+    padding: 0 15px 0 5px
+  .form-actions-circle
+    margin: 4px 0
+  .tech
+    left: 50px
+
+  .circle-mob:before
+    content: ''
+@media only screen and (max-width : 991px)
+  .form-customer
+    max-width: 100%
+    margin-bottom: 50px
+  .proposed
+    .form-header
+      padding: 10px 50px 10px 24px
+  .tech
+    display: none
+  .btn-gray-tech, .btn-gray-detail, .btn-gray-arrow
+    display: flex
+  .btn-gray
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 40px
+  .form-actions
+    flex-wrap: wrap
+    justify-content: center
+  .form-actions-files
+    display: flex
+    justify-content: center
+    margin-bottom: 12px
+  .form-actions-svg
+    background: linear-gradient(180deg, #93C3EC 0%, #8AADCB 100%)
+    border-radius: 7px
+    width: 41px
+    height: 41px
+    padding: 10px 9px
+    margin: 0 4px
+    path
+      fill: #ffffff
+      stroke: #ffffff
+  .form-actions-svg:hover path
+    fill: #ffffff
+    stroke: #ffffff
+  .form-actions-item
+    width: 100%
+    display: flex
+    justify-content: center
+    padding: 10px 15px
+  .form-actions-circle
+    width: 6px
+    height: 6px
+    margin: 0 3.5px
+  .form-spares .form-title:last-child, .form-spares td:last-child
+    padding: 20px 15px
+    vertical-align: middle
+  .form-action
+    right: 50%
+  .btn-gray
+    line-height: 60px
+  .form-container .form-row
+    flex-direction: column
+  .form-left
+    width: 100%
+    margin: 0
+  .form-right
+    width: 100%
+  .form-table td
+    padding: 20px
+
+@media only screen and (max-width : 767px)
+  .form-container
+    padding: 40px 20px
+  .form-left
+    .col-6
+      padding: 0 5px
+  .form-flex .form-field
+    width: calc(50% - 10px)
+    margin-right: 20px
+  .close-window
+    display: flex
+  .popup
+    padding: 0
+    .form-header
+      border-radius: 0
+      padding: 10px 50px 10px 23px
+    textarea
+      max-height: 150px
+    .form
+      border-radius: 0
+  .form-spares .form-title:last-child, .form-spares td:last-child
+    padding: 20px 0!important
+  .close:before
+    width: 27px
+    height: 3px
+  .close:after
+    height: 27px
+    width: 3px
+  .form-row-date
+    flex-wrap: wrap
+    .form-field, .form-field:first-child, .form-field:last-child, .form-field:nth-child(2)
+      width: calc(50% - 5px)
+      max-width: 100%
+      &:nth-child(2n+2)
+        margin-right: 0
+  .popup .form
+    min-height: 100vh
+  .popup-container
+    max-width: 100%
+    border-radius: 0
+    min-height: 100vh
+    .form
+      min-height: auto
+      border-radius: 10px
+    .form-header
+      border-radius: 10px 10px 0 0
+    .d-flex .close-black
+      display: none
+  .proposed .form-table td
+    width: 50%
+  .proposed .form-table td:last-child
+    width: 50%
+    padding: 20px 20px 20px 10px
+@media only screen and (max-width : 575px)
+  .btn-edit, .breadcrumb
+    display: none
+  .proposed .form-header
+    border-radius: 0
+  .form-drop
+    display: none
+  .form-arrow
+    display: block
+  .wrap
+    overflow: hidden
+  .wrap-container
+    padding: 0
+  .title
+    padding: 0 20px
+  .form
+    border-radius: 0
+  .proposed .title
+    margin-bottom: 33px
+  .form-header
+    border-radius: 0
+  .form-spares
+    margin-top: 38px
+  .btn
+    margin: 33px auto
+  .popup-container
+    padding: 40px 20px
+  .pagination
+    margin: 30px 0 0 0
